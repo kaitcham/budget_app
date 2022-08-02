@@ -1,0 +1,18 @@
+<h1>Categories</h1>
+
+<div class="categories">
+  <% @categories.each do |category| %>
+    <%= link_to category_expenses_path(category) do %>
+      <img src="<%= category.icon %>" alt='Category icon'/>
+      <div>
+        <p><%= category.name %></p>
+        <p><%= category.total %></p>
+      </div>
+    <% end %>
+  <% end %>
+  <%= link_to "New category", new_category_path %>
+</div>
+
+
+
+
