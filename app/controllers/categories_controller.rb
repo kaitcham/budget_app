@@ -1,11 +1,10 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_category, only: %i[show destroy]
 
   def index
-    @categories = Category.all
+    @categories = current_user.categories
   end
-
-  def show; end
 
   def new
     @category = Category.new

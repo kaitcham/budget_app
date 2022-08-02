@@ -2,11 +2,11 @@
 
 <div class="categories">
   <% @categories.each do |category| %>
-    <%= link_to category do %>
+    <%= link_to category_expenses_path(category) do %>
       <img src="<%= category.icon %>" alt='Category icon'/>
       <div>
         <p><%= category.name %></p>
-        <p>$75</p>
+        <p><%= category.total %></p>
       </div>
     <% end %>
   <% end %>
