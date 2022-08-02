@@ -1,0 +1,15 @@
+<%= form_with model: @category, method: :post, class: 'form' do |form| %>
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :icon, style: "display: block" %>
+    <%= form.text_field :icon %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
