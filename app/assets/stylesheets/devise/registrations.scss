@@ -48,4 +48,12 @@
             border: 1px solid black;
         }
     }
+
+    a {
+        font-size: 18px;
+    }
+
+    a:nth-child(2) {
+        margin-top: 15px;
+    }
 }
