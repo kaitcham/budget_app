@@ -6,7 +6,7 @@ RSpec.describe Expense, type: :model do
     expect(@chris).to be_valid
     @cars = Category.create(name: 'cars', icon: 'C', author_id: @chris.id)
     expect(@cars).to be_valid
-    @benz = Expense.create(name:'benz', amount: 1000, author_id: @chris.id, category_id: @cars.id)
+    @benz = Expense.create(name: 'benz', amount: 1000, author_id: @chris.id, category_id: @cars.id)
   end
 
   after(:each) do
