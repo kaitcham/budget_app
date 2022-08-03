@@ -48,12 +48,17 @@ gem 'sassc-rails'
 # Devise for user authentication
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
+# Gem for window tests
+gem 'ffi', '~> 1.15', '>= 1.15.5'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
 end
 
 group :development do
