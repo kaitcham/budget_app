@@ -1,11 +1,9 @@
-<%= link_to '<', categories_path %>
-
-<h1>New category</h1>
-
-<%= render "form", category: @category %>
-
-<br>
-
-<div>
-  <%= link_to "Back to categories", categories_path %>
+<div class="new_category_container">
+  <h2>New category</h2>
+  <div class="new_category_form">
+    <%= render "form", category: @category %><br>
+    <div class="back_to_categories">
+      <%= link_to "Back to categories", categories_path %>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,41 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $c1;
+}
+
+.app_layout_header {
+  padding: 20px 15px;
+  color: #fff;
+  background-color: #377bc2;
+
+  .welcome {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+
+  .notice {
+    font-size: 16px;
+    color: green;
+  }
+}

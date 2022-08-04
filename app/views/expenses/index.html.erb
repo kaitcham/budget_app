@@ -1,32 +1,33 @@
-<%= link_to '<', categories_path %>
-
-<div class="header">
-  <h1><%= Category.find(params['category_id']).name.upcase %>
-    <a href="/groups" class="btn_back"><i class="fa fa-chevron-left"></i></a>
-  </h1>
-</div>
-<div >
-  <div class="total">
-    <h3> Total Spent Amount: $
-      <%=
-        @sum = 0
-        Expense.where(category_id: params['category_id']).each do |cat|
-          @sum += cat.amount
-        end
-        @sum
-      %>
-    </h3>
-  </div>
-  <% @expenses.each do |expense| %>
-    <div>
+<div class="expenses_container">
+  <div class="expenses">
+    <h2><%= Category.find(params['category_id']).name.upcase %></h2>
+    <div class="header">
+      <h3> Total Amount: </h3>
       <p>
-        <span><%=expense.name %></span>
-        <span><%=expense.updated_at.strftime('%Y-%m-%d') %></span>
-      </p>
-      <p>
-        $<%=expense.amount %>
+        <strong>$
+          <%=
+            @sum = 0
+            Expense.where(category_id: params['category_id']).each do |cat|
+              @sum += cat.amount
+            end
+            @sum
+          %>
+        </strong>
       </p>
     </div>
-  <% end %>
-  <%=link_to 'New Expense', new_category_expense_path(@category), class:'btn'%>
+    <div class="expense_container" >
+      <% @expenses.each do |expense| %>
+        <div class="expense">
+          <div class="expense_desc">
+            <h4><%=expense.name %></h4>
+            <p><%=expense.updated_at.strftime('%Y-%m-%d') %></p>
+          </div>
+          <p>
+            $<%=expense.amount %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="new_expense"><%=link_to 'New Expense', new_category_expense_path(@category)%></div>
 </div>

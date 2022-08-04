@@ -1,0 +1,49 @@
+@import "variables";
+
+.splash {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $c1;
+
+  .welcome {
+    margin-bottom: 180px;
+
+    h1 {
+      color: #abe4c7;
+      text-shadow:
+        -2px -2px 0 $p3,
+        2px -2px 0 $p3,
+        -2px 2px 0 $p3,
+        2px 2px 0 $p3;
+      font-size: 40px;
+      margin-left: 10px;
+      font-family: 'Merinda', sans-serif;
+    }
+
+    h3 {
+      color: #abe4c7;
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-family: 'Light', sans-serif;
+    }
+  }
+
+  .operation {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 80px;
+
+    .btn {
+      padding: 10px;
+      display: flex;
+      border-radius: 4px;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      border: 1px solid black;
+    }
+  }
+}
