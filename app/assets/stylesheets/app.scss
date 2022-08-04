@@ -15,7 +15,9 @@ body {
 
 .app_layout_header {
   padding: 20px 15px;
-  background-color: rgb(240, 237, 233);
+  color: #fff;
+  background-color: #377Bc2
+;
 
   .welcome {
     display: flex;
@@ -23,6 +25,7 @@ body {
     justify-content: space-between;
 
     a {
+      color: #fff;
       text-decoration: none;
     }
   }
