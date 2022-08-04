@@ -5,11 +5,16 @@
     justify-content: space-between;
 
     .expenses {
+        h2 {
+            margin: 12px 0 18px 0;
+            text-align: center;
+        }
 
         .header {
             display: flex;
             padding: 0 15px;
-            margin: 5px 0 10px 0;
+            font-size: 20px;
+            margin: 5px 0 14px 0;
             justify-content: space-between;
         }
 
@@ -35,7 +40,7 @@
                     flex-direction: column;
 
                     p {
-                        font-size: 12px;
+                        font-size: 13px;
                         margin-left: 5px;
                     }
                 }

@@ -1,5 +1,5 @@
 .title {
-    margin: 10px 0 15px 0;
+    margin: 10px 0 25px 0;
     text-align: center;
 }
 
@@ -13,7 +13,7 @@
     .category_container {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         width: 100%;
         padding: 0 15px;
 
@@ -53,5 +53,54 @@
             text-decoration: none;
         }
 
+    }
+}
+
+.new_category_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin: 100px 0 15px 0;
+        text-align: center;
+    }
+
+    .new_category_form{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 120px;
+
+        .form {
+            width: 90%;
+            gap: 0.5rem;
+            display: flex;
+            margin-bottom: 10px;
+            flex-direction: column;
+
+            .field label {
+                font-size: 20px;
+            }
+
+            .field input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 2px;
+                border: 1px solid black;
+            }
+
+            .actions input {
+                padding: 8px 10px;
+                border-radius: 4px;
+                border: 1px solid black;
+            }
+        }
+
+        .back_to_categories {
+            font-size: 18px;
+        }
     }
 }
