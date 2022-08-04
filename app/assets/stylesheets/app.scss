@@ -1,39 +1,39 @@
 @import 'variables';
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: $c1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $c1;
 }
 
 .app_layout_header {
-    padding: 20px 15px;
-    background-color: rgb(240, 237, 233);
+  padding: 20px 15px;
+  background-color: rgb(240, 237, 233);
 
-    .welcome {
-        display: flex;
-        font-size: 24px;
-        justify-content: space-between;
+  .welcome {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
 
-        a {
-            text-decoration: none;
-        }
+    a {
+      text-decoration: none;
     }
+  }
 }
 
 .messages {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .notice {
-        font-size: 16px;
-        color: green;
-    }
+  .notice {
+    font-size: 16px;
+    color: green;
+  }
 }
