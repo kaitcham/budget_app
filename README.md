@@ -26,7 +26,7 @@ Please check out this [presentational video](https://www.loom.com/share/83c1edca
 
 # Requirements for this project
 
-You can find requirements for this project [here].(https://github.com/microverseinc/curriculum-rails/blob/main/capstone/rails_capstone.md)
+You can find the requirements for this project [here](https://github.com/microverseinc/curriculum-rails/blob/main/capstone/rails_capstone.md)
 
 ## Getting Started
 
