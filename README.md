@@ -16,7 +16,13 @@ Please check out this [presentational video](https://www.loom.com/share/83c1edca
 
 ## Built With
 
-- Ruby on rails
+- Ruby
+- Rails 
+- Postgres 
+- Rspec
+- Capybara
+- javascript
+- Scss
 
 # Requirements for this project
 
