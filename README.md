@@ -12,7 +12,7 @@ Please check out the [live demo deployed on heroku](https://kaitchambudgetapp.he
 
 # Presentational Video 
 
-Please check out the [presentational video](https://www.loom.com/share/83c1edca15ad471385335cc681054b47)
+Please check out this [presentational video](https://www.loom.com/share/83c1edca15ad471385335cc681054b47)
 
 ## Built With
 
